@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/24387e5ac3.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+  <title>CodeAssits</title>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav id="nav">
+    <div class="container flex main-nav">
+      <a href="#">
+        <h2>CodeAssits</h2>
+      </a>
+
+      <ul class="flex nav-items">
+        <li class="nav-link"><a href="#">Home</a></li>
+        <li class="nav-link"><a href="#about">About</a></li>
+        <li class="nav-link"><a href="#service">Services</a></li>
+        <li class="nav-link"><a href="#portfolio">Portfolio</a></li>
+        <li class="nav-link"><a href="#contact">Contact</a></li>
+      </ul>
+
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header>
+    <div class="container header-section flex">
+      <div class="left">
+        <h1>Hello, I'm <span class="multiText"></span></h1>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos eveniet vitae, molestiae autem modi
+          repudiandae quo similique incidunt nobis voluptatem, tempora asperiores. Quo, nisi vel!</p>
+      </div>
+      <div class="right">
+        <img src="/assets/man.png" alt="header image">
+      </div>
+    </div>
+  </header>
+
+  <!-- About -->
+  <section id="about" class="flex">
+    <div class="container">
+      <h1 class="title">About</h1>
+      <div class="container flex about-container">
+        <div class="left">
+          <div>
+            <h1>Hello, I'm CodeAssits</h1>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos eveniet vitae, molestiae autem modi
+              repudiandae quo similique incidunt nobis voluptatem, tempora asperiores. Quo, nisi vel!</p>
+          </div>
+
+          <div class="flex tab-titles">
+            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+            <p class="tab-links" onclick="opentab('education')">Education</p>
+          </div>
+
+          <div class="tab-contents active-tab" id="skills">
+            <ul>
+              <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+              <li><span>Web Development</span><br>Web app Development</li>
+              <li><span>App Development</span><br>Building Android/iOS apps</li>
+            </ul>
+          </div>
+
+          <div class="tab-contents" id="experience">
+            <ul>
+              <li><span>2021 - Current</span><br>Lorem ipsum dolor sit amet consectetur adipisicing</li>
+              <li><span>2019 - 2021</span><br>Lorem ipsum dolor sit amet consectetur adipisicing</li>
+              <li><span>2016 - 2017</span><br>Lorem ipsum dolor sit amet consectetur adipisicing</li>
+            </ul>
+          </div>
+
+          <div class="tab-contents" id="education">
+            <ul>
+              <li><span>2016</span><br>Lorem ipsum dolor sit amet consectetur</li>
+              <li><span>2017</span><br>Lorem ipsum dolor sit amet consectetur</li>
+              <li><span>2018</span><br>Lorem ipsum dolor sit amet consectetur</li>
+            </ul>
+          </div>
+
+
+
+
+        </div>
+
+        <div class="right">
+          <img src="/assets/man.png" alt="header image">
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="service" class="flex">
+    <div class="container">
+      <h1 class="title">Services</h1>
+      <div class="flex service-container">
+
+        <div class="flex service-card">
+          <i class="fa-solid fa-code"></i>
+          <h3>UI/UX Designing</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, exercitationem esse.</p>
+        </div>
+
+        <div class="flex service-card">
+          <i class="fa-brands fa-app-store"></i>
+          <h3>Web Development</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, exercitationem esse.</p>
+        </div>
+
+        <div class="flex service-card">
+          <i class="fa-brands fa-android"></i>
+          <h3>Android/iOS app Development</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, exercitationem esse.</p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- Portfolio -->
+  <section id="portfolio" class="flex">
+    <div class="container portfolio-container">
+      <h1 class="title">Portfolio</h1>
+      <div class="flex portfolio-items">
+        <div class="portfolio-card"><img src="/assets/p1.jpg" alt="project 1"></div>
+        <div class="portfolio-card"><img src="/assets/p2.jpg" alt="project 2"></div>
+        <div class="portfolio-card"><img src="/assets/p3.jpg" alt="project 3"></div>
+        <div class="portfolio-card"><img src="/assets/p1.jpg" alt="project 1"></div>
+        <div class="portfolio-card"><img src="/assets/p2.jpg" alt="project 2"></div>
+        <div class="portfolio-card"><img src="/assets/p3.jpg" alt="project 3"></div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="flex container">
+    <div class="container">
+      <h1 class="title">Contact</h1>
+      <div class="container contact-container">
+        <div class="form flex">
+          <form action="#">
+            <div class="input-box">
+              <input placeholder="Name" type="text" id="name" required>
+
+            </div>
+
+            <div class="input-box">
+              <input placeholder="Email" type="email" id="email" required>
+
+            </div>
+
+            <div class="input-box">
+              <textarea placeholder="message" name="message" id="message" cols="60" rows="6" required></textarea>
+
+            </div>
+
+            <button type="submit" class="btn">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <Footer class="flex">
+    <div class="container flex">
+      <p>All Rights reserved </p><i class="fa-regular fa-copyright"></i>
+      <p>2023</p>
+    </div>
+  </Footer>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script src="/script.js"></script>
+
+</html>
